@@ -1,0 +1,5 @@
+# git 
+alias gweeklog='git log master --author `git config --get user.name` --since "1 week ago" --oneline | tac'
+alias glist='git log --oneline'
+alias gst='git status'
+alias gco='git checkout'
