@@ -3,3 +3,4 @@ alias gweeklog='git log master --author `git config --get user.name` --since "1 
 alias glist='git log --oneline'
 alias gst='git status'
 alias gco='git checkout'
+alias grmb='git branch --merged | grep -v \* | xargs git branch -D'
