@@ -8,3 +8,4 @@ alias gnpick='git log --left-right --graph --cherry-pick --oneline'
 alias gtree='git -c core.pager="less -SRF" log --oneline --graph --decorate'
 alias gca="git commit --amend"
 alias gci="git commit"
+Alias gbr="git branch"
