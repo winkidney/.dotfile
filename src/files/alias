@@ -1,4 +1,4 @@
-# git 
+# git basic
 alias gweeklog='git log master --author `git config --get user.name` --since "1 week ago" --oneline | tac'
 alias glist='git log --oneline'
 alias gst='git status'
@@ -9,3 +9,6 @@ alias gtree='git -c core.pager="less -SRF" log --oneline --graph --decorate'
 alias gca="git commit --amend"
 alias gci="git commit"
 alias gbr="git branch"
+
+# git tools
+ alias gcd="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
