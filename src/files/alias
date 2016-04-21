@@ -8,7 +8,13 @@ alias gnpick='git log --left-right --graph --cherry-pick --oneline'
 alias gtree='git -c core.pager="less -SRF" log --oneline --graph --decorate'
 alias gca="git commit --amend"
 alias gci="git commit"
-alias gbr="git branch"
+
+# git branch
+alias gb="git branch"
+gba='git branch -a'
+gbnm='git branch --no-merged'
+gbr='git branch --remote'
+
 
 # git tools
  alias gcd="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
