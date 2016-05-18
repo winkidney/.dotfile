@@ -11,10 +11,12 @@ alias gci="git commit"
 
 # git branch
 alias gb="git branch"
-gba='git branch -a'
-gbnm='git branch --no-merged'
-gbr='git branch --remote'
+alias gba='git branch -a'
+alias gbnm='git branch --no-merged'
+alias gbr='git branch --remote'
 
+# git log
+alias gls="git log --stat"
 
 # git tools
  alias gcd="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
