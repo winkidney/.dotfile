@@ -9,6 +9,10 @@ alias gtree='git -c core.pager="less -SRF" log --oneline --graph --decorate'
 alias gca="git commit --amend"
 alias gci="git commit"
 
+# git update/fetch
+alias gup="git pull --rebase"
+alias gfr="git fetch origin master;git rebase FETCH_HEAD"
+
 # git branch
 alias gb="git branch"
 alias gba='git branch -a'
