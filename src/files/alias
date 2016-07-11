@@ -19,6 +19,9 @@ alias gba='git branch -a'
 alias gbnm='git branch --no-merged'
 alias gbr='git branch --remote'
 
+# review tools
+alias grt="git review -t"
+
 # git log
 alias gls="git log --stat"
 
