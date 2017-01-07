@@ -65,11 +65,13 @@ def _append2profile(source_str):
     _run("echo '%s' >> %s" % (source_str, PROFILE))
 
 
+@command()
 def install_alias():
     source_str = _get_source_str(ALIAS_PATH)
     _append2rc(source_str)
 
 
+@command()
 def init_ubuntu():
     """
     ubuntu only.
@@ -83,6 +85,7 @@ def init_ubuntu():
     )
 
 
+@command()
 def mk_py_env():
     """
     make basic python development environment.
@@ -99,6 +102,7 @@ def mk_py_env():
     _append2rc(SHRC_PATH)
 
 
+@command("link_tools")
 def link_tools():
     if not os.path.exists(BIN_DIR):
         os.mkdir(BIN_DIR)
@@ -119,17 +123,13 @@ def link_tools():
     _append2profile(path_str)
 
 
-@command("all")
+@command()
 def install_all():
     init_ubuntu()
     install_alias()
     mk_py_env()
     link_tools()
 
-
-@command("link_tools")
-def link():
-    link_tools()
 
 if __name__ == "__main__":
     entry()
