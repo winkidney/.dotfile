@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # install
 sudo apt-get install python-pip
 sudo apt-get install zsh
