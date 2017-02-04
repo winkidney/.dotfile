@@ -30,4 +30,11 @@
 (global-linum-mode t) ;; enable line numbers globally
 (elpy-enable)
 (elpy-use-ipython)
+
+;; SHELL
+;; ---------------------------------------
+(autoload 'ansi-color-for-comint-mode-on "ansi-color" nil t)
+(add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on t)
+
 ;; init.el ends here
+
