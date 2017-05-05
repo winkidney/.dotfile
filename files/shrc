@@ -4,7 +4,6 @@ source /usr/local/bin/virtualenvwrapper.sh
 export GOPATH=~/workspace/go
 export PATH=$PATH:$GOPATH/bin/
 
-
 # env for nodejs
 # npm --registry=https://registry.npm.taobao.org install -g cnpm
 
@@ -15,3 +14,5 @@ export PHANTOMJS_CDNURL=http://npm.taobao.org/mirrors/phantomjs
 export CHROMEDRIVER_CDNURL=http://npm.taobao.org/mirrors/chromedriver
 export SELENIUM_CDNURL=http://npm.taobao.org/mirrorss/selenium
 
+# for thefuck
+eval $(thefuck --alias)
