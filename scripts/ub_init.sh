@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 # install
-sudo apt-get install python-pip
-sudo apt-get install zsh
-sudo apt-get install terminator
-sudo apt-get install vim
+sudo apt-get install -y python-pip
+sudo apt-get install -y zsh
+sudo apt-get install -y vim
 
 # remove
 sudo apt-get auto-remove firefox
