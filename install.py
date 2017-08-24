@@ -96,10 +96,10 @@ def mk_py_env():
     )
     for package in packages_to_install:
         _run(
-            "sudo pip install {package}".format(package=package)
+            "pip install {package}".format(package=package)
         )
-
-    _append2rc(SHRC_PATH)
+    path = _get_source_str(SHRC_PATH)
+    _append2rc(path)
 
 
 @command("link_tools")
