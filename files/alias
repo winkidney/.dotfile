@@ -10,8 +10,9 @@ alias gca="git commit --amend"
 alias gci="git commit"
 
 # git update/fetch
-alias gup="git pull --rebase"
+alias gpr="git pull --rebase"
 alias gfr="git fetch origin master;git rebase FETCH_HEAD"
+alias grb="git rebase -i "
 
 # git branch
 alias gb="git branch"
