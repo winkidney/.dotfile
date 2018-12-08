@@ -1,4 +1,3 @@
-source /usr/local/bin/virtualenvwrapper.sh
 
 # env for golang
 export GOPATH=~/workspace/go
@@ -14,5 +13,3 @@ export PHANTOMJS_CDNURL=http://npm.taobao.org/mirrors/phantomjs
 export CHROMEDRIVER_CDNURL=http://npm.taobao.org/mirrors/chromedriver
 export SELENIUM_CDNURL=http://npm.taobao.org/mirrorss/selenium
 
-# for thefuck
-eval $(thefuck --alias)
